@@ -14,12 +14,6 @@ const routes = express.Router();
 
 const upload = multer(uploadConfig);
 
-
-// routes.post('/users/', (req, res) => {
-//     // req.body = acessar corpo da requisicao / criação e edicao de registros
-//     return res.json(req.body); 
-//  });
-
  routes.post('/Session', SessionController.store);
 
  routes.get('/Session', SessionController.store);
