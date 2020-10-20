@@ -20,7 +20,12 @@ const upload = multer(uploadConfig);
 
  routes.post('/Spots' , upload.single('thumbnail') ,  SpotController.store);
  routes.get('/Spots' , SpotController.index); 
+
+ 
  routes.get('/Dashboard', Dashboard.show);
+
+
+
 
  routes.post('/Spots/:spot_id/booking', BookingController.store);
 
